@@ -2,13 +2,23 @@
 
 <html lang="en">
 <head>
+    <script>
+    // Ensure the title is set before any content is loaded
+    document.title = "BlockChirp - BlockChain Analytics and Visualisation"; // Set title immediately in head
+    window.addEventListener('load', function() {
+        // Set title again when page finishes loading, just in case
+        document.title = "BlockChirp - BlockChain Analytics and Visualisation";
+    });
+</script>
+<script>
+  window.addEventListener('load', function() {
+      // Remove any injected Framer title
+      document.querySelector('title').text = "BlockChirp - BlockChain Analytics and Visualisation";
+  });
+</script>
+
     <meta charset="utf-8">
-    
-    
-    
-    
-    
-    
+  
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="Framer c07a8c1">
     <title>BlockChirp - BlockChain Analytics and Visualisation</title>
@@ -291,7 +301,12 @@
 </svg>
 </div>
     
-    
+    <script>
+    window.addEventListener('load', function() {
+        document.title = "BlockChirp - BlockChain Analytics and Visualisation"; // Set your title on page load
+    });
+</script>
+
     
 </body>
 </html>
